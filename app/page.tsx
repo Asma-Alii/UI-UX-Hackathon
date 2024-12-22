@@ -6,9 +6,7 @@ import DeliveryIcon from "@/public/icons/free-delivery 1.svg";
 import CashBack from "@/public/icons/cashback 1.svg";
 import Quality from "@/public/icons/premium-quality 1.svg";
 import Support from "@/public/icons/24-hours-support 1.svg";
-import Dot1 from "@/public/icons/dot-blue.svg";
-import Dot2 from "@/public/icons/dot-pink.svg";
-import Dot3 from "@/public/icons/dot-green.svg";
+import Brand from "@/public/icons/image 1174.svg"
 
 
 const joseFin = Josefin_Sans({
@@ -334,7 +332,7 @@ xl:pb-0 lg:pb-0
 {/*Image section*/}
 
 
-<section className="w-screen  h-auto bg-[#F1F0FF] pb-10 lg:pt-12">
+<section className="w-full  h-auto bg-[#F1F0FF] pb-10 lg:pt-12">
   
 
   <div className=" flex flex-col justify-center mx-16 lg:flex lg:flex-row lg:w-[60%] lg:mx-52">
@@ -385,71 +383,426 @@ xl:pb-0 lg:pb-0
 {/*trending product section*/}
 
 
-<section className="bg-gray-100 py-8">
-  <div className="container ">
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+<section className="bg-white py-8 mx-16 md:mx-[17vw] lg:mx-[5vw] xl:mx-56 ">
+  <div className="text-center py-4 font-bold text-3xl text-[#151875]">
+    <h1>Trending Products</h1>
+  </div>
+  <div className="container  lg:w-[78vw] lg:m-auto lg:mr-[5vw] text-[#151875] ">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 xl:w-[65vw]">
       {/* Card 1 */}
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <div className="bg-blue-200 h-40 flex justify-center items-center">
-          <img
-            src="https://via.placeholder.com/150"
+      <div className="bg-white shadow-md  overflow-hidden h-[50vw] md:h-[35vw] md:w-[30vw] lg:w-[18vw] lg:h-[25vw]
+      xl:w-[15vw] xl:h-[20vw] ">
+        <div className="bg-[#F5F6F8] h-[35vw] w-[35vw]  flex justify-center items-center m-auto mt-3
+        sm:w-[35vw] sm:mt-4
+        md:h-[25vw] md:w-[27vw]
+        lg:w-[15vw] lg:h-[15vw]
+        xl:w-[14vw] xl:h-[14vw]">
+          <Image
+            src="/images/image 1171.svg"
             alt="Image 1"
-            className="object-contain h-32 w-32"
+            height={150}
+            width={150}
+            layout="cover"
           />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold">Card Title 1</h3>
+          <h3 className="text-lg font-semibold lg:text-sm">Cantilever chair</h3>
+          <p className="lg:text-sm">$26.00 </p>
         </div>
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <div className="bg-blue-200 h-40 flex justify-center items-center">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Image 2"
-            className="object-contain h-32 w-32"
+      <div className="bg-white shadow-md  overflow-hidden h-[50vw] md:h-[35vw] md:w-[30vw] lg:w-[18vw] lg:h-[25vw]
+      xl:w-[15vw] xl:h-[20vw]">
+        <div className="bg-[#F5F6F8] h-[35vw] w-[35vw]  flex justify-center items-center m-auto mt-3
+       sm:w-[35vw] sm:mt-4
+        md:h-[25vw] md:w-[27vw]
+        lg:w-[15vw] lg:h-[15vw]
+        xl:w-[14vw] xl:h-[14vw]">
+          <Image
+            src="/images/image 1170.svg"
+            alt="Image 1"
+            height={150}
+            width={150}
+            layout="cover"
           />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold">Card Title 2</h3>
+          <h3 className="text-lg font-semibold lg:text-sm ">Cantilever chair</h3>
+          <p className="lg:text-sm">$26.00 </p>
         </div>
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <div className="bg-blue-200 h-40 flex justify-center items-center">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Image 3"
-            className="object-contain h-32 w-32"
+     <div className="bg-white shadow-md  overflow-hidden h-[50vw] md:h-[35vw] md:w-[30vw] lg:w-[18vw] lg:h-[25vw]
+     xl:w-[15vw] xl:h-[20vw]">
+        <div className="bg-[#F5F6F8] h-[35vw] w-[35vw]   flex justify-center items-center m-auto mt-3
+       sm:w-[35vw] sm:mt-4
+       md:h-[25vw] md:w-[27vw]
+       lg:w-[15vw] lg:h-[15vw] 
+       xl:w-[14vw] xl:h-[14vw]">
+          <Image
+            src="/images/image 31.svg"
+            alt="Image 1"
+            height={150}
+            width={150}
+            layout="cover"
           />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold">Card Title 3</h3>
+          <h3 className="text-lg font-semibold lg:text-sm ">Cantilever chair</h3>
+          <p className="lg:text-sm">$26.00 </p>
         </div>
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <div className="bg-blue-200 h-40 flex justify-center items-center">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Image 4"
-            className="object-contain h-32 w-32"
+      <div className="bg-white shadow-md  overflow-hidden h-[50vw] md:h-[35vw] md:w-[30vw] lg:w-[18vw] lg:h-[25vw]
+        xl:w-[15vw] xl:h-[20vw]">
+        <div className="bg-[#F5F6F8] h-[35vw] w-[35vw] flex justify-center items-center m-auto mt-3
+        sm:w-[35vw] sm:mt-4 
+       md:h-[25vw] md:w-[27vw]
+        lg:w-[15vw] lg:h-[15vw]
+        xl:w-[14vw] xl:h-[14vw]">
+          <Image
+            src="/images/image 3221.svg"
+            alt="Image 1"
+            height={150}
+            width={150}
+            layout="cover"
           />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold">Card Title 4</h3>
+          <h3 className="text-lg font-semibold lg:text-sm ">Cantilever chair</h3>
+          <p className="lg:text-sm">$26.00 </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+{/*discounnt item */}
 
 
-   
+ 
+<section>
+<div className="text-center py-4 mt-10  text-[#151875]">
+    <h1 className="text-[5vw] font-bold sm:text-[4.5vw] md:text-[3.5vw] lg:text-[3vw] xl:text-[2vw]" >Discount Item</h1>
+    <ul className="flex justify-center gap-4 mt-4">
+      <li className="text-[#FB4997] underline underline-offset-4">Wood Chair</li>
+      <li>Plastic Chair</li>
+      <li>Sofa Colletion</li>
+    </ul>
+  </div>
+
+    <div className="flex items-center justify-center h-auto ">
+    
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-lg p-6 lg:gap-0  gap-8 md:max-w-[70vw] lg:max-w-[80vw] xl:max-w-[60vw] xl:p ">
+        {/* Left Section */}
+        <div className="space-y-4  lg:pt-[10vw]">
+          <h2 className="text-2xl font-bold text-[#151875] md:text-3xl lg:text-3xl xl:text-[1.9vw]">20% Discount Of All Products</h2>
+          <p className="text-base font-semibold text-[#FB4997] md:text-xl lg:text-xl xl:text-[1.2vw]">Earns Sofa Compact</p>
+          <p className="text-gray-500 text-sm md:text-base lg:text-lg xl:text-[1vw] xl:leading-normal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat
+            habitasse nec, bibendum condimentum.
+          </p>
+
+          <ul className="space-y-2">
+            <li className="flex items-center">
+              <span className="text-blue-600">✔</span>
+              <span className="ml-2 text-gray-500 text-sm md:text-base lg:text-lg xl:text-[1vw] ">Material expose like metals</span>
+            </li>
+            <li className="flex items-center">
+              <span className="text-blue-600">✔</span>
+              <span className="ml-2 text-gray-500 text-sm md:text-base lg:text-lg xl:text-[1vw]">Simple neutral colours</span>
+            </li>
+          </ul>
+
+          <button className="px-6 py-2 text-white bg-[#FB4997] rounded hover:bg-pink-600 text-sm md:text-base lg:text-lg
+          xl:text-[1vw] ">
+            Shop Now
+          </button>
+        </div>
+
+        {/* Right Section */}
+        <div className="relative flex items-center justify-center">
+          <div className="absolute w-60 h-60 bg-pink-100 rounded-full md:w-52 md:h-52 lg:w-72 lg:h-72"></div>
+          <Image
+            src="/images/tortuga-sofa.svg" // Replace with actual image file path in public folder
+            alt="Sofa"
+            width={300}
+            height={300}
+            className="z-10 w-[70vw] h-[50vw] md:w-[45vw] md:h-[35vw] lg:w-[50vw] lg:h-[40vw]"
+          />
+        </div>
+      </div>
+    </div>
+    </section>
+  
+
+{/*top categories section*/}
+
+<div className="flex flex-col items-center justify-center h-auto bg-white mt-[10vw] lg:mt-0">
+      <h2 className="text-3xl font-bold text-[#151875] mb-7">Top Categories</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6  w-[70vw] md:w-[80vw] xl:w-[65vw] ">
+        <div className="relative flex flex-col items-center   ">
+          <div className="w-[25vw] h-[25vw] md:w-[18vw] md:h-[18vw] xl:w-[15vw] xl:h-[15vw] rounded-full bg-gray-100 flex items-center justify-center overflow-hidden shadow-lg">
+            <Image
+              src="/images/image 20.svg"
+              alt="Category Image"
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="text-lg font-medium text-[#151875] xl:text-[1.2vw]  mt-4">Mini LCV Chair</h3>
+          <p className="text-sm text-[#151875]">$56.00</p>
+        </div>
+        <div className="relative flex flex-col items-center  ">
+          <div className="w-[25vw] h-[25vw]  md:w-[18vw] md:h-[18vw] xl:w-[15vw] xl:h-[15vw]  rounded-full bg-gray-100 flex items-center justify-center overflow-hidden shadow-lg">
+            <Image
+              src="/images/image 1168.svg"
+              alt="Category Image"
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="text-lg font-medium text-[#151875] xl:text-[1.2vw] mt-4">Mini LCV Chair</h3>
+          <p className="text-sm text-[#151875]">$56.00</p>
+        </div>
+
+        <div className="relative flex flex-col items-center   ">
+          <div className="w-[25vw] h-[25vw] md:w-[18vw] md:h-[18vw] xl:w-[15vw] xl:h-[15vw] rounded-full bg-gray-100 flex items-center justify-center overflow-hidden shadow-lg">
+            <Image
+              src="/images/image 1171.svg"
+              alt="Category Image"
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="text-lg font-medium text-[#151875] mt-4 xl:text-[1.2vw]">Mini LCV Chair</h3>
+          <p className="text-sm text-[#151875]">$56.00</p>
+        </div>
+        <div className="relative flex flex-col items-center  ">
+          <div className="w-[25vw] h-[25vw]  md:w-[18vw] md:h-[18vw] xl:w-[15vw] xl:h-[15vw] rounded-full bg-gray-100 flex items-center justify-center overflow-hidden shadow-lg">
+            <Image
+              src="/images/image 20.svg"
+              alt="Category Image"
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="text-lg font-medium text-[#151875] xl:text-[1.2vw] mt-4">Mini LCV Chair</h3>
+          <p className="text-sm text-[#151875]">$56.00</p>
+        </div>
+
+      </div>
+      <div className="flex space-x-2 mt-6">
+        <span className="w-3 h-3 bg-pink-500 rounded-full"></span>
+        <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+        <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+      </div>
+    </div>
+    
+
+    <section>
+  <div className="relative w-full h-[50vw] mt-[10vw] mb-[5vw] xl:mt-[7vw] lg:w-full lg:h-[30vw] xl:h-[20vw] lg:mt-[13vw]">
+    {/* Text and Button Wrapper */}
+    <div className="absolute top-0 left-0 w-full h-full bg-[#F1F0FF] bg-opacity-50 flex flex-col items-center justify-center z-10">
+      <h1 className="text-[#151875] text-lg md:text-2xl lg:text-3xl font-semibold text-center mb-4">
+        Get Latest Update By Subscribing <br /> To Our Newsletter
+      </h1>
+      <button className="bg-[#FB2E86] text-white px-6 py-2 hover:bg-pink-600 transition">
+        Shop Now
+      </button>
+    </div>
+    {/* Background Image */}
+    <Image
+      src={"/images/Rectangle 102.svg"}
+      alt="Background"
+      layout="fill"
+      objectFit="cover"
+      className="lg:object-cover z-0"
+    />
+  </div>
+</section>
+
+
+
+
+
+
+
+  
+
+
+
+
+ 
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#151875] mb-12">
+          Latest Blog
+        </h2>
+        <div className="grid gap-6 md:gap-8 mx-[10vw] lg:mx-0 xl:mx-[9vw] 2xl:mx-0 lg:grid-cols-3">
+          {/* Blog Card 1 */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/blog1.svg" // Path to the blog image
+              alt="Blog 1"
+              width={500} // Set width
+              height={320} // Set height
+              className="w-full h-fit object-cover"
+            />
+            <div className="p-6">
+              <div className="flex items-center space-x-3 mb-4 text-sm text-gray-500">
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-pink-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1-9H8V9h3V7H8V5h5v8zm6 0h-3V9h3V7h-3V5h5v8h-2z" />
+                  </svg>
+                  <span  className="xl:text-[0.9vw]">Saber Ali</span>
+                </span>
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18C7.589 4 4 7.589 4 12s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm-1 8h2v2h-2v-2zm0-4h2v3h-2V8z" />
+                  </svg>
+                  <span  className="xl:text-[0.9vw]">21 August, 2020</span>
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-[#151875] mb-2 xl:text-[1vw]">
+                Top Essential Trends in 2021
+              </h3>
+              <p className="text-gray-600 text-sm mb-4 xl:text-[0.9vw]">
+                More off this less hello samlande lied much over tightly circa
+                horse taped mighty.
+              </p>
+              <a
+                href="#"
+                className="text-pink-500 hover:text-pink-600 text-sm font-medium xl:text-[0.9vw]"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+
+          {/* Repeat for Blog Cards 2 and 3 */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/blog2.svg" // Path to the blog image
+              alt="Blog 2"
+              width={500} // Set width
+              height={320} // Set height
+              className="w-full h-fit object-cover"
+            />
+            <div className="p-6">
+              <div className="flex items-center space-x-3 mb-4 text-sm text-gray-500">
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-pink-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1-9H8V9h3V7H8V5h5v8zm6 0h-3V9h3V7h-3V5h5v8h-2z" />
+                  </svg>
+                  <span  className="xl:text-[0.9vw]">Surfauxion</span>
+                </span>
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18C7.589 4 4 7.589 4 12s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm-1 8h2v2h-2v-2zm0-4h2v3h-2V8z" />
+                  </svg>
+                  <span  className="xl:text-[0.9vw]">21 August, 2020</span>
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-[#151875] mb-2 xl:text-[1vw] ">
+                Top Essential Trends in 2021
+              </h3>
+              <p className="text-gray-600 text-sm mb-4 xl:text-[0.9vw]">
+                More off this less hello samlande lied much over tightly circa
+                horse taped mighty.
+              </p>
+              <a
+                href="#"
+                className="text-pink-500 hover:text-pink-600 text-sm font-medium xl:text-[0.9vw] "
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/blog-3.svg" // Path to the blog image
+              alt="Blog 3"
+              width={500} // Set width
+              height={320} // Set height
+              className="w-full h-fit object-cover"
+            />
+            <div className="p-6">
+              <div className="flex items-center space-x-3 mb-4 text-sm text-gray-500">
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-pink-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1-9H8V9h3V7H8V5h5v8zm6 0h-3V9h3V7h-3V5h5v8h-2z" />
+                  </svg>
+                  <span  className="xl:text-[0.9vw]">Saber Ali</span>
+                </span>
+                <span className="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18C7.589 4 4 7.589 4 12s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm-1 8h2v2h-2v-2zm0-4h2v3h-2V8z" />
+                  </svg>
+                  <span className="xl:text-[0.9vw]">21 August, 2020</span>
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-[#151875] mb-2 xl:text-[1vw]">
+                Top Essential Trends in 2021
+              </h3>
+              <p className="text-gray-600 text-sm mb-4 xl:text-[0.9vw]">
+                More off this less hello samlande lied much over tightly circa
+                horse taped mighty.
+              </p>
+              <a
+                href="#"
+                className="text-pink-500 hover:text-pink-600 text-sm font-medium xl:text-[0.9vw]"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+
+
+
      </>
   );
 }
@@ -460,5 +813,3 @@ xl:pb-0 lg:pb-0
 
 
     
-
-
