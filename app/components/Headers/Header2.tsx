@@ -204,10 +204,10 @@ export default function Header2() {
               </div>
             )}
           </div>
-        
+       <Link href={"/myaccount"}>
           <p  className="block px-4 py-2 text-black hover:text-white hover:bg-[#FB2E86]">
-           Products
-          </p>
+           Login
+          </p></Link>
 
 
 <Link href={"/blog"}>

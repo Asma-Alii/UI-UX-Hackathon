@@ -10,7 +10,7 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <nav className={" w-full px-4 py-4 bg-[#7E33E0] h-[44px] text-[16px] "}>
+    <nav className={" w-full px-4 py-4 bg-[#7E33E0] h-[44px] text-[16px] hidden lg:block "}>
       <div className="flex justify-around items-center h-full ">
         {/* Left Section - Email & Phone */}
         <div className="text-white  space-x-4 flex  ">
@@ -20,11 +20,11 @@ export default function Navbar() {
 
         {/* Right Section - Wishlist, Cart, and Login */}
         <div className="flex items-center space-x-6 text-white">
-          <div className="hidden lg:block">
+          <div className="">
             <span>English</span>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="">
             <span>USD</span>
           </div>
 
