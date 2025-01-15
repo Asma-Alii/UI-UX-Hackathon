@@ -5,6 +5,13 @@ import Header1 from "./components/Headers/Header1";
 import Header2 from "./components/Headers/Header2";
 import Footer from "./components/Footer/Footer";
 
+import { Josefin_Sans } from "next/font/google"
+
+const joseFin = Josefin_Sans({
+  subsets: ["latin"],
+});
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${joseFin.className} antialiased`}
       >
       
       <Header1 />

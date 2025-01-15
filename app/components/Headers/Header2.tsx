@@ -4,13 +4,10 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import Dropdown from "@/public/icons/akar-icons_chevron-down.svg"
+import Link from "next/link";
 
-import { Josefin_Sans } from "next/font/google"
 
 
-const joseFin = Josefin_Sans({
-  subsets: ["latin"],
-});
 
 
 
@@ -28,8 +25,8 @@ export default function Header2() {
         <div className="flex items-center justify-between h-16 lg:w-[50vw] lg:ml-[10vw]
          xl:justify-around xl:w-[50vw] xl:ml-[9vw]
          2xl:ml-[16vw] 2xl:w-[50vw] xl:gap-9">
-          <div className={`flex items-center ${joseFin}` }>
-            <span className="text-[#0D0E43] font-bold text-4xl pl-9 lg:text-[3vw] lg:p-0 
+          <div className={"flex items-center" }>
+            <span className="text-[#0D0E43] font-bold text-[6vw] md:text-[4vw] pl-9 lg:text-[3vw] lg:p-0 
             xl:text-[34px]  ">Hekto</span>
           </div>
           <div className="flex items-center ">
@@ -40,7 +37,7 @@ export default function Header2() {
               className="inline-flex items-center justify-center p-2 pr-9 rounded-md  text-[#0D0E43] hover:text-[#0D0E43] hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white lg:hidden"
             >
               <svg
-                className={`h-11 w-11 ${isOpen ? "hidden" : "block"}`}
+                className={`h-8 w-8 md:h-9 md:w-9  ${isOpen ? "hidden" : "block"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -73,9 +70,9 @@ export default function Header2() {
           </div>
           {/* Menu Items */}
           <div className="hidden lg:flex">
-            <a href="#" className="text-[#0D0E43] hover:text-[#FB2E86]  px-3 py-2 rounded-md text-sm font-normal">
+            <Link href={"/"}><p className="text-[#0D0E43] hover:text-[#FB2E86]  px-3 py-2 rounded-md text-sm font-normal">
               Home
-            </a>
+            </p></Link>
             <div
               className="relative"
               
@@ -90,45 +87,56 @@ export default function Header2() {
               </button>
               {dropdownOpen && (
                 <div className="absolute z-10 mt-2 bg-white rounded-md shadow-lg w-[10vw] text-sm">
-                  <a
-                    href="#"
+                  <Link href={"/shoplist"}><p
+                   
                     className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                   >
                     Shop List
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
-                  >
-                    Hekto Demo
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
-                  >
+                  </p></Link>
+
+                  <Link href={"/shopsidebar"}><p
+                   
+                   className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
+                 >
+                   Shop Left Sidebar
+                 </p></Link>
+
+                 <Link href={"/product-details"}>
+                <p
+                  className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
+                >
+                  Product Details
+                </p></Link>
+                  <Link href={"/aboutus"}>
+                   <p className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]">
                     About Us
-                  </a>
-                  <a
-                    href="#"
+                   </p>
+                    </Link>
+                    <Link href={"/faq"}> 
+                  <p
+                  
                     className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                   >
                     FAQs
-                  </a>
+                  </p></Link> 
                 </div>
               )}
             </div>
-            <a href="#" className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
+            <p className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
              Products
-            </a>
-            <a href="#" className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
+            </p>
+            <Link href={"/blog"}>
+            <p  className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
              Blog
-            </a>
-            <a href="#" className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
+            </p></Link>
+            <Link href={"/shop"}>
+            <p  className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
              Shop
-            </a>
-            <a href="#" className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
+            </p></Link>
+            <Link href={"/contact"}>
+            <p  className="text-[#0D0E43] hover:text-[#FB2E86] px-3 py-2 rounded-md text-sm font-normal">
              Contact
-            </a>
+            </p></Link>
           </div>
         </div>
 
@@ -154,9 +162,10 @@ export default function Header2() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden">
-          <a href="#" className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
+          <Link href={"/"}>
+          <p className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
             Home
-          </a>
+          </p></Link>
           <div className="block px-4 py-2">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -167,46 +176,53 @@ export default function Header2() {
             </button>
             {dropdownOpen && (
               <div className="mt-2 bg-white rounded-md">
-                <a
-                  href="#"
+                <Link href={"/shoplist"}>
+                <p
                   className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                 >
                   Shop List
-                </a>
-                <a
-                  href="#"
+                </p></Link>
+                <Link href={"/product-details"}>
+                <p
                   className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                 >
-                  Hekto Demo
-                </a>
-                <a
-                  href="#"
+                  Product Details
+                </p></Link>
+
+                <Link href={"/aboutus"}>
+                <p
                   className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                 >
                   About Us
-                </a>
-                <a
-                  href="#"
+                </p></Link>
+                <Link href={"/faq"}>
+                <p
                   className="block px-4 py-2 text-[#0D0E43] hover:text-white hover:bg-[#FB2E86]"
                 >
                   FAQs
-                </a>
+                </p></Link>
               </div>
             )}
           </div>
         
-          <a href="#" className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
+          <p  className="block px-4 py-2 text-black hover:text-white hover:bg-[#FB2E86]">
            Products
-          </a>
-          <a href="#" className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
+          </p>
+
+
+<Link href={"/blog"}>
+          <p className="block px-4 py-2 text-black hover:text-white hover:bg-[#FB2E86]">
            Blog
-          </a>
-          <a href="#" className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
+          </p></Link>
+
+          <Link href={"/shop"}>
+          <p  className="block px-4 py-2 text-black hover:text-white hover:bg-[#FB2E86]">
            Shop
-          </a>
-          <a href="#" className="block px-4 py-2 text-black hover:text-white hover:bg-gray-700">
+          </p></Link>
+          <Link href={"/contact"}>
+          <p  className="block px-4 py-2 text-black hover:text-white hover:bg-[#FB2E86]">
            Contact
-          </a>
+          </p></Link>
         </div>
       )}
     </nav>

@@ -4,16 +4,13 @@ import Email from "@/public/icons/Vector (1).svg"
 import Heart from "@/public/icons/Vector (2).svg"
 import Login from "@/public/icons/carbon_user.svg"
 import Cart from "@/public/icons/fluent_cart-24-regular.svg"
+import Link from "next/link"
 
-import { Josefin_Sans } from "next/font/google"
 
-const joseFin = Josefin_Sans({
-  subsets: ["latin"],
-});
 
 export default function Navbar() {
   return (
-    <nav className={`hidden lg:block w-full px-4 py-4 bg-[#7E33E0] h-[44px] ${joseFin.className} text-[16px] ` }>
+    <nav className={" w-full px-4 py-4 bg-[#7E33E0] h-[44px] text-[16px] "}>
       <div className="flex justify-around items-center h-full ">
         {/* Left Section - Email & Phone */}
         <div className="text-white  space-x-4 flex  ">
@@ -23,11 +20,11 @@ export default function Navbar() {
 
         {/* Right Section - Wishlist, Cart, and Login */}
         <div className="flex items-center space-x-6 text-white">
-          <div>
+          <div className="hidden lg:block">
             <span>English</span>
           </div>
 
-          <div>
+          <div className="hidden lg:block">
             <span>USD</span>
           </div>
 
@@ -35,7 +32,7 @@ export default function Navbar() {
          
           {/* Login Icon */}
           <div className="flex items-center space-x-1">
-            <span className="flex items-center gap-1"> <Login/> Login</span>
+            <Link href={"/myaccount"}><span className="flex items-center gap-1"> <Login/> Login</span></Link>
           </div>
 
           {/* Wishlist Icon */}
